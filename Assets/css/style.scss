@@ -1,0 +1,304 @@
+
+$para-font: 'Roboto',Helvetica,sans-serif;
+$headline: 'Raleway', sans-serif;
+$accent-font: 'Bangers', sans-serif;
+$dark: #666;
+$grey: #ccc;
+$light: #fff;
+$teal: #4aaaa5;
+
+/***GLOBAL***/
+
+/*layout*/
+
+.main-wrapper {
+    height: 100vh;	
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    max-width: 960px;
+    height: 100%;
+}
+.float-left {
+	float:left;
+}
+/*typography*/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $headline;
+}
+
+p,
+a,
+label {
+    font-family: $para-font;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+p{
+	color: $dark;
+	font-size:1.1em;
+	line-height:1.5;
+	
+}
+h1 {
+    color: $teal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+h1.accent-font {
+	font-family: $accent-font;
+	letter-spacing: 0.03em;
+	line-height:1.2;
+}
+/*color | themes*/
+
+.accent-color {
+    color: $teal;
+}
+
+.light {
+    color: #fff;
+}
+
+.dark {
+    color: $dark;
+}
+
+.grey {
+    color: $grey;
+}
+.bg{
+	&--accent {
+		background: $teal;
+	}
+	&--grey {
+	background:$grey;
+}
+	&--light {
+		background: $light;
+	}
+}
+
+.border-bottom {
+  	border-bottom: 3px solid $grey;
+}
+/*buttons/links*/
+
+.button {
+    background: $teal;
+    color: $light;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+/*header*/
+
+.header {
+    background: $light;
+    border-bottom: 2px solid $grey;
+}
+
+.logo {
+    width: 30%;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	    padding: .5rem 0 .2rem 0;
+}
+.nav {
+    padding:.8rem 0;
+}
+li.nav--item a {
+		transition: 0.2 ease;
+		color: $grey;
+	line-height:1.1;
+	padding:.8rem;
+		&:hover {
+			color:$teal;
+			transition: 0.2 ease;
+		}
+}
+
+/*footer*/
+
+footer {
+    border-top: 4px solid #4aaaa5;
+    background: #666;
+		min-height:50px;
+}
+
+/*main*/
+
+.main {
+    padding: 5% 0;
+    background-image: url(../images/what-the-hex.png);
+}
+.main-container {
+	margin-bottom:5%;
+}
+
+/***ABOUT PAGE***/
+.about-wrapper {
+	padding-top:20px;
+	
+}
+
+
+/***PORTFOLIO PAGE***/
+#portfolio {
+	margin:50px 0;
+	& span {
+		background: $teal;
+		opacity:0.9;
+		letter-spacing:.1em;
+		font-size:1.5em;
+		display:block;
+		width:100%;
+		text-align:center;
+		line-height:1;
+		padding:15px 0;
+		position:absolute;
+		bottom:10px;
+		color: $light;
+		font-family:$accent-font;
+		z-index:2;
+		text-align:center;
+	}
+}
+.portfolio-item {
+		min-height:200px;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position: 50% 50%;
+		position:relative;
+		overflow:hidden;
+		margin:15px 0;
+	&:hover{
+		cursor:pointer;
+	}
+	&--one {
+		background-image:url(https://picsum.photos/300/250?image=400);
+	}
+	&--two {
+		background-image:url(https://picsum.photos/300/250?image=340);
+	}
+	&--three {
+		background-image:url(https://picsum.photos/300/250?image=350);
+	}
+		&--four {
+		background-image:url(https://picsum.photos/300/250?image=310);
+	}
+	&--five {
+		background-image:url(https://picsum.photos/300/250?image=240);
+	}
+	&--six {
+		background-image:url(https://picsum.photos/300/250?image=217);
+	}
+}
+
+.portfolio-label {
+		background: $teal;
+		display:block;
+		width:100%;
+		text-align:center;
+		line-height:1;
+		padding:15px 0;
+		position:absolute;
+		bottom:10px;
+		color: $light;
+		font-family:$accent-font;
+		z-index:2;
+		text-align:center;
+}
+	/*span {
+		background: $teal;
+		display:block;
+		width:100%;
+		text-align:center;
+		line-height:1;
+		padding:15px 0;
+		position:absolute;
+		bottom:10px;
+		color: $light;
+		font-family:$headline;
+	}*/
+
+
+/***CONTACT PAGE***/
+
+/*form*/
+form {
+	padding-top:20px;
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 960px;
+    border: 2px solid #ddd;
+    background: #fff;
+		padding: 30px 40px 20px 40px;
+}
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 6px;
+    border: 2px solid $grey;
+    padding: 10px;
+    line-height: 2;
+		margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    font-size: 1em;
+    padding: 6px 10px;
+		
+}
+
+input[type="submit"] {
+    background: #4aaaa5;
+    max-width: 200px;
+    padding: 7px;
+    color: #fff;
+    font-size: 1.4em;
+		border:none;
+		margin-top:5px;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-webkit-input-placeholder,
+:-ms-input-placeholder {
+    padding: 10px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    color: #ccc;
+    /* old IE */
+    background-color: #ccc;
+    /* Modern Browsers */
+}
+
+label {
+    color: #666;
+		font-size: 1.1em;
+}
