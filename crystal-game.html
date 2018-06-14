@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Crystal Guessing Game</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/crystals.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-faded">
+ 		<a class="navbar-brand" href="#">Jquery Games</a>
+	</nav>
+
+  <div class="container">
+		<div class="row">
+			<div class="col col-lg-5 module--rules">
+				<div class="py3">
+						<h3>Crystal Guessing Game</h3>
+						<ol>
+							<li>Try to make your score equal to the goal number displayed.</li>
+							<li>Each crystal has a hidden value</li>
+							<li>Click on the crystal to add the value to your score</li>
+							<li>Use a combination of crystal values to match the goal</li>
+							<li>If you go over the goal number, you lose and the game restarts</li>
+							<li>If you match the goal, you win and the game restarts</li>
+						</ol>
+						<button id="start-game">Start New Game</button>
+				</div>
+			</div>
+			<div class="col col-lg-7 module--gamearea">
+				<div class="row">
+					<div class="col">
+						<h3>Goal</h3>
+						<div><span id="random-num" class="big-num">?</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<div id="crystal--moonstone" class="crystal crystal--moonstone" data-val="0">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1176730/crystal--moonstone.jpg">
+							<!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1176730/crystal--azurite.jpg">-->
+						</div>
+					</div>
+					<div class="col-3">
+						<div id="crystal--azurite" class="crystal crystal--azurite" data-val="2">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1176730/crystal--azurite.jpg">
+						</div>
+					</div>
+					<div class="col-3">
+						<div id="crystal--amethyst" class="crystal crystal--amethyst" data-val="0">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1176730/crystal--amethyst.jpg">
+						</div>
+					</div>
+					<div class="col-3">
+						<div id="crystal--jade" class="crystal crystal--jade" data-val="0">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1176730/crystal--jade.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<h3>Your Value:</h3>
+						<span id="guess-counter" class="big-num">0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row py-5">
+			<div class="col-6 module--wins">
+				<h3>Wins</h3>
+				<h3 id="wins" class="text-center">0</h3>
+			</div>
+			<div class="col-6 module--losses">
+				<h3>Losses</h3>
+				<h3 id="losses" class="text-center">0</h3>
+			</div>
+		</div>
+  </div>
+
+ 
+
+  <footer class="site-footer mt-4">
+    <div class="container py-4">
+      <div class="row">
+        
+       
+      </div>
+    </div>
+    <div class="footer-copyright py-4">
+      
+    </div>
+  </footer>
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="assets/js/crystal-game.js"></script>
+
+</body>
+
+</html>
